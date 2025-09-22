@@ -1,5 +1,6 @@
 body {
     background-color: rgb(225, 190, 106);
+    font-size: 16px;
 }
 .title {
     background-color: rgb(225, 190, 106);
@@ -88,6 +89,7 @@ button{
 .activity-details p {
     color: rgb(64, 176, 166);
     line-height: 1.6;
+    font-size: 16px;
 }
 .restaurant-container h1 {
     color: rgb(64, 176, 166);
@@ -99,10 +101,11 @@ button{
 .restaurant-item p {
     color: rgb(64, 176, 166);
     line-height: 1.6;
+    font-size: 16px;
 }
 .navigation {
     background-color: rgb(64, 176, 166);
-            padding: 10px 0;
+    padding: 10px 0;
 }
 .navigation ul {
     list-style: none;
@@ -172,6 +175,7 @@ button{
 .river-details p {
     color: rgb(64, 176, 166);
     line-height: 1.6;
+    font-size: 16px;
 }
 .river-container h1 {
     color: rgb(225, 190, 106);
@@ -181,6 +185,7 @@ button{
 }
 .history-section p {
     color: rgb(64, 176, 166);
+    font-size: 16px;
 }
 .history-container h1 {
     color: rgb(64, 176, 166);
