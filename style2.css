@@ -16,7 +16,7 @@ body {
     line-height: 60px;
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(64, 176, 166);;
+    background-color: rgb(64, 176, 166);
     color: red;
     flex: 1;
 }
@@ -43,4 +43,145 @@ button{
     height: 50px;
     width: 100px;
     bottom: 40px;
+}
+.to-do {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(64, 176, 166);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.to-do h1 {
+    text-align: center;
+    color: rgb(225, 190, 106);
+    margin-bottom: 30px;
+}
+.activity-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: bisque;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+.activity-item:hover {
+    transform: translateY(-5px);
+}
+.activity-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.activity-details {
+    flex-grow: 1;
+}
+.activity-details h3 {
+    margin-top: 0;
+    color: rgb(64, 176, 166);
+}
+.activity-details p {
+    color: rgb(64, 176, 166);
+    line-height: 1.6;
+}
+.restaurant-container h1 {
+    color: rgb(64, 176, 166);
+}
+.restaurant-item h3{
+    margin-top: 0;
+    color: rgb(64, 176, 166);
+}
+.restaurant-item p {
+    color: rgb(64, 176, 166);
+    line-height: 1.6;
+}
+.navigation {
+    background-color: rgb(64, 176, 166);
+            padding: 10px 0;
+}
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navigation li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.navigation a:hover {
+    background-color: rgb(64, 176, 166);
+}
+.navigation a:visited {
+    color: rgb(225, 190, 106);
+}
+.river-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(64, 176, 166);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.river-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+.river-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: bisque;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+.river-section:hover {
+    transform: translateY(-5px);
+}
+.river-section img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+.river-details {
+    flex-grow: 1;
+}
+.river-details h2 {
+    margin-top: 0;
+    color: rgb(64, 176, 166);
+}
+.river-details p {
+    color: rgb(64, 176, 166);
+    line-height: 1.6;
+}
+.river-container h1 {
+    color: rgb(225, 190, 106);
+}
+.history-section h2 {
+    color: rgb(64, 176, 166);
+}
+.history-section p {
+    color: rgb(64, 176, 166);
+}
+.history-container h1 {
+    color: rgb(64, 176, 166);
 }
