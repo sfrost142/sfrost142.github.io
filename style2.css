@@ -190,3 +190,6 @@ button{
 .history-container h1 {
     color: rgb(64, 176, 166);
 }
+#changeStyleButton {
+    color: rgb(225, 190, 106);
+}
