@@ -162,3 +162,7 @@ button{
 #changeStyleButton {
     color: #ffcc00;
 }
+.restaurant-item img {
+    width: 750px;
+    height: auto;
+}
