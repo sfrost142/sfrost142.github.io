@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <nav class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="todo.html">Things To Do</a></li>
+        <li><a href="food.html">Local Restaurants</a></li>
+        <li><a href="history.html">History of Terre Haute</a></li>
+        <li><a href="river.html">The Wabash River</a></li>
+        <li><a href="blog.html">Comments</a></li>
+        <li id="changeStyleButton"><strong>Colorblind Mode</strong></li>
+    </ul>
+    </nav>
+
+    <div class="comment-section">
+    <h2>Comments</h2>
+    <div class="comments-list" id="commentsList">
+    </div>
+    <form id="commentForm">
+        <textarea id="commentInput" placeholder="Share your thoughts..." required></textarea>
+        <input type="text" id="nameInput" placeholder="Your Name" required>
+        <button type="submit">Post Comment</button>
+    </form>
+</div>
+
+    <script src="script.js" defer></script>
+    </body>
