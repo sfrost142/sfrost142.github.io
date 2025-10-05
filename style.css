@@ -21,7 +21,7 @@ body {
 .buttons button {
     height: 50px;
     width: 700px;
-    background-color: beige;
+    background-color: #333;
 }
 .content {
     display: flex;
