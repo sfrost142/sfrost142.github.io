@@ -1,105 +1,123 @@
 body {
     background-color: rgb(225, 190, 106);
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 769px) {
+    .title {
+        font-size: 36px;
+        height: 500px;
+        line-height: 60px;
+    }
+    .buttons {
+        height: 900px;
+        line-height: 60px;
+        flex-direction: row;
+    }
+    .buttons button {
+        width: 100%;
+    }
+    .activity-item img {
+        width: 150px;
+        height: 150px;
+    }
+    .restaurant-item img {
+        width: 50%;
+    }
+    .river-section img {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+        height: auto;
+        line-height: 1.5;
+    }
+    .buttons {
+        height: auto;
+        line-height: 1.5;
+        flex-direction: column;
+    }
+    .buttons button {
+        width: 100%;
+    }
+    .activity-item, .river-section {
+        flex-direction: column;
+    }
+    .activity-item img {
+        width: 100%;
+        height: auto;
+    }
+    .restaurant-item img {
+        width: 100%;
+        height: auto;
+    }
+    .river-section img {
+        width: 100%;
+        height: auto; 
+    }
 }
 .title {
     background-color: rgb(225, 190, 106);
-    color: rgb(64, 176, 166);
     text-align: center;
-    height: 500px;
-    line-height: 60px;
     font-family: Cursive;
     flex: 1;
-    -webkit-text-stroke: .25px black;
 }
 .buttons {
-    height: 900px;
-    line-height: 60px;
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(64, 176, 166);
-    color: red;
+    background-color: burlywood;
     flex: 1;
 }
 .buttons button {
     height: 50px;
-    width: 700px;
-    background-color: rgb(225, 190, 106);
-    color: rgb(64, 176, 166);
-    font-size: large;
-    -webkit-text-stroke: .25px black;
+    background-color: #333;
+    color: white;
+    margin: 5px 0;
 }
 .content {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 98vh;
-}
-.title h2 {
-    text-wrap: balance;
-}
-ul {
-    list-style-type: none;
-}
-.to-do {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgb(64, 176, 166);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.to-do h1 {
-    text-align: center;
-    color: rgb(225, 190, 106);
-    margin-bottom: 30px;
 }
 .activity-item {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     padding: 15px;
-    background-color: bisque;
+    background-color: rgb(64, 176, 166);
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease-in-out;
+    width: 100%;
 }
 .activity-item:hover {
     transform: translateY(-5px);
 }
 .activity-item img {
-    width: 150px;
-    height: 150px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
-    flex-shrink: 0;
 }
 .activity-details {
     flex-grow: 1;
 }
 .activity-details h3 {
     margin-top: 0;
-    color: rgb(64, 176, 166);
+    color: rgb(225, 190, 106);
 }
 .activity-details p {
-    color: rgb(64, 176, 166);
+    color: rgb(225, 190, 106);
     line-height: 1.6;
     font-size: 16px;
 }
-.restaurant-container h1 {
-    color: rgb(64, 176, 166);
-}
-.restaurant-item h3{
-    margin-top: 0;
-    color: rgb(64, 176, 166);
-}
-.restaurant-item p {
-    color: rgb(64, 176, 166);
-    line-height: 1.6;
-    font-size: 16px;
-}
+
 .navigation {
-    background-color: rgb(64, 176, 166);
+    background-color: rgba(64, 176, 166);
     padding: 10px 0;
 }
 .navigation ul {
@@ -121,11 +139,12 @@ ul {
     transition: background-color 0.3s ease;
 }
 .navigation a:hover {
-    background-color: rgb(64, 176, 166);
+    background-color: #555;
 }
 .navigation a:visited {
-    color: rgb(225, 190, 106);
+    color: #ffcc00;
 }
+
 .river-container {
     max-width: 1200px;
     margin: 20px auto;
@@ -136,18 +155,20 @@ ul {
 }
 .river-container h1 {
     text-align: center;
-    color: #333;
+    color: rgb(225, 190, 106);
     margin-bottom: 30px;
 }
+
 .river-section {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     padding: 15px;
-    background-color: bisque;
+    background-color: rgb(225, 190, 106);
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease-in-out;
+    width: 100%;
 }
 .river-section:hover {
     transform: translateY(-5px);
@@ -172,21 +193,8 @@ ul {
     line-height: 1.6;
     font-size: 16px;
 }
-.river-container h1 {
-    color: rgb(225, 190, 106);
-}
-.history-section h2 {
-    color: rgb(64, 176, 166);
-}
-.history-section p {
-    color: rgb(64, 176, 166);
-    font-size: 16px;
-}
-.history-container h1 {
-    color: rgb(64, 176, 166);
-}
 #changeStyleButton {
-    color: rgb(225, 190, 106);
+    color: #ffcc00;
 }
 .comment-section {
     max-width: 800px;
@@ -222,9 +230,30 @@ button {
     border-radius: 5px;
     cursor: pointer;
     height: 50px;
-    width: 100px;
-    bottom: 40px;
+    width: 100%;
 }
 button:hover {
     background-color: #555;
+}
+.history-container h1,
+.history-container h2,
+.history-container p {
+    color: rgb(64, 176, 166);
+}
+.restaurant-container h1,
+.restaurant-container h3,
+.restaurant-container p {
+    color: rgb(64, 176, 166);
+}
+body {
+    color: rgb(64, 176, 166);
+}
+.title h2 {
+    color: rgb(64, 176, 166);
+}
+.comment-section h2 {
+    color: rgb(225, 190, 106);
+}
+.comment-section .comments-list {
+    color: rgb(225, 190, 106);
 }
